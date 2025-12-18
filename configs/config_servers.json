@@ -1,0 +1,16 @@
+{
+    "environments": {
+        "1": {
+            "name": "DEV",
+            "base_url": "http://demo-dev.com/",
+            "is_prod": false,
+            "expected_status": 200
+        },
+        "2": {
+            "name": "PROD",
+            "base_url": "http://demo-prod.com/",
+            "is_prod": true,
+            "expected_status": 403
+        }
+    }
+}

@@ -1,0 +1,287 @@
+{
+    "environments": {
+        "1": {
+            "name": "DEV",
+            "base_url": "http://demo-dev.com/api/services/"
+        },
+        "2": {
+            "name": "PROD",
+            "base_url": "http://demo-prod.com/api/services/"
+        }
+    },
+    "endpoints": {
+        "1": {
+            "name": "Language id",
+            "method": "GET",
+            "path": "get_lng/{id}",
+            "needs_language": false,
+            "path_params": ["id"]
+        },
+        "2": {
+            "name": "Languages",
+            "method": "GET",
+            "path": "get_all_lng",
+            "needs_language": false
+        },
+        "3": {
+            "name": "Blogs",
+            "method": "GET",
+            "path": "{language}/get_blogs",
+            "needs_language": true
+        },
+        "4": {
+            "name": "Blog id",
+            "method": "GET",
+            "path": "{language}/get_blog/{url_path}",
+            "needs_language": true,
+            "path_params": ["url_path"]
+        },
+        "5": {
+            "name": "Courses",
+            "method": "GET",
+            "path": "{language}/get_courses",
+            "needs_language": true
+        },
+        "6": {
+            "name": "Course id",
+            "method": "GET",
+            "path": "{language}/get_course/{url_path}",
+            "needs_language": true,
+            "path_params": ["url_path"]
+        },
+        "7": {
+            "name": "Course subscription",
+            "method": "GET",
+            "path": "add_subscriber",
+            "needs_language": false
+        },
+        "8": {
+            "name": "Videos",
+            "method": "GET",
+            "path": "{language}/get_videos",
+            "needs_language": true
+        },
+        "9": {
+            "name": "Downloads",
+            "method": "GET",
+            "path": "{language}/get_downloads",
+            "needs_language": true
+        },
+        "10": {
+            "name": "Legal",
+            "method": "GET",
+            "path": "{language}/get_legal",
+            "needs_language": true
+        },
+        "11": {
+            "name": "Legals",
+            "method": "GET",
+            "path": "{language}/get_legals/{url_path}",
+            "needs_language": true,
+            "path_params": ["url_path"]
+        },
+        "12": {
+            "name": "Categories",
+            "method": "GET",
+            "path": "{language}/get_categories",
+            "needs_language": true
+        },
+        "13": {
+            "name": "Category path",
+            "method": "GET",
+            "path": "{language}/get_category/{url_path}",
+            "needs_language": true,
+            "path_params": ["url_path"]
+        },
+        "14": {
+            "name": "Subcategories",
+            "method": "GET",
+            "path": "{language}/{category}/get_sub_categories",
+            "needs_language": true,
+            "path_params": ["category"]
+        },
+        "15": {
+            "name": "Subcategory path",
+            "method": "GET",
+            "path": "{language}/{category}/get_sub_category/{url_path}",
+            "needs_language": true,
+            "path_params": ["category", "url_path"]
+        },    
+        "16": {
+            "name": "Products",
+            "method": "GET",
+            "path": "{language}/{category}/{subcategory}/get_products",
+            "needs_language": true,
+            "path_params": ["category", "subcategory"]
+        },
+        "17": {
+            "name": "Product path",
+            "method": "GET",
+            "path": "{language}/{category}/{subcategory}/get_product/{url_path}",
+            "needs_language": true,
+            "path_params": ["category", "subcategory", "url_path"]
+        },
+        "18": {
+            "name": "Subproducts",
+            "method": "GET",
+            "path": "{language}/get_sub_product/{url_path}",
+            "needs_language": true,
+            "path_params": ["url_path"]
+        },
+        "19": {
+            "name": "Groups",
+            "method": "GET",
+            "path": "{language}/{subcategory}/get-groups",
+            "needs_language": true,
+            "path_params": ["subcategory"]
+        },
+        "20": {
+            "name": "Group path",
+            "method": "GET",
+            "path": "{language}/{product_path}/get_group/{url_path}",
+            "needs_language": true,
+            "path_params": ["product_path", "url_path"]
+        },
+        "21": {
+            "name": "Agent id",
+            "method": "GET",
+            "path": "get_customer_aent/{id}",
+            "needs_language": false,
+            "path_params": ["id"]
+        },
+        "22": {
+            "name": "Tracking id",
+            "method": "GET",
+            "path": "get_tracking_order/{id}",
+            "needs_language": false,
+            "path_params": ["id"]
+        },
+        "23": {
+            "name": "Email template 1",
+            "method": "POST",
+            "path": "email_contatti",
+            "needs_language": false,
+            "needs_body": true, 
+            "needs_token": false
+        },
+        "24": {
+            "name": "Email template 2",
+            "method": "POST",
+            "path": "email_preventivo",
+            "needs_language": false,
+            "needs_body": true, 
+            "needs_token": false  
+        },
+        "25": {
+            "name": "Login",
+            "method": "POST",
+            "path": "login",
+            "needs_language": false,
+            "needs_body": true, 
+            "needs_token": false  
+        },
+        "26": {
+            "name": "Get User Informations",
+            "method": "POST",
+            "path": "getuserinfo",
+            "needs_language": false,
+            "needs_body": true, 
+            "needs_token": true 
+        },
+        "27": {
+            "name": "Change Password",
+            "method": "POST",
+            "path": "changepassword",
+            "needs_language": false,
+            "needs_body": true, 
+            "needs_token": true  
+        },
+        "28": {
+            "name": "Customer Orders",
+            "method": "POST",
+            "path": "get_customer_orders",
+            "needs_language": false,
+            "needs_body": true, 
+            "needs_token": true  
+        },
+        "29": {
+            "name": "Customer Systems",
+            "method": "POST",
+            "path": "get_customer_systems",
+            "needs_language": false,
+            "needs_body": true, 
+            "needs_token": true  
+        },
+        "30": {
+            "name": "Customer Products",
+            "method": "POST",
+            "path": "get_customer_products",
+            "needs_language": false,
+            "needs_body": true, 
+            "needs_token": true  
+        }
+    },
+    "body_presets": {
+        "23": {  
+            "example": {
+                "name": "John",
+                "email": "example@gmail.com",
+                "message": "Test course #1 DEV",
+                "product": "string",
+                "course": "Course #1",
+                "template": "COURSE"
+            }
+        },
+        "24": {  
+            "example": {
+                "name": "Jack",
+                "email": "example@gmail.com",
+                "message": "Test #1",
+                "file": "Product #1",
+                "job_name": "Test job"
+            }
+        },
+        "25": { 
+            "example": {
+                "username": "example@gmail.com",
+                "password": "123456",
+                "application_id": 1,
+                "ip_address": "localhost",
+                "user_agent": "CLI"
+            }
+        },
+        "26": { 
+            "example": {
+                "username": "example@gmail.com",
+                "application_id": 1
+            }
+        },
+        "27": {  
+            "example": {
+                "username": "example@gmail.com",
+                "application_id": 1,
+                "old_password": "123456",
+                "new_password": "12345"
+            }
+        },
+        "28": { 
+            "example": {
+                "customer_livith_code": "123",
+                "customer_email": "example@gmail.com",
+                "order_status": "A"
+            }
+        },
+        "29": { 
+            "example": {
+                "customer_livith_code": "123",
+                "customer_email": "example@gmail.com"
+            }
+        },
+        "30": { 
+            "example": {
+                "customer_code": "1234",
+                "customer_email": ""
+            }
+        }
+    }
+}
