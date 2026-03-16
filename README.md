@@ -25,19 +25,19 @@
 
 While Postman is great for manual testing, this bot shines when:
 
-🟢 Telegram-first – test APIs directly in chat, no app switching.
+- Telegram-first – test APIs directly in chat, no app switching.
 
-⚡ Lightweight & portable – works anywhere Python runs, no GUI needed.
+- Lightweight & portable – works anywhere Python runs, no GUI needed.
 
-📝 Config-driven – define APIs once in JSON, shareable & reusable.
+- Config-driven – define APIs once in JSON, shareable & reusable.
 
-🔐 Session & token management – automatic login and Bearer token reuse.
+- Session & token management – automatic login and Bearer token reuse.
 
-🎯 Interactive params – dynamic placeholders {id}, {category}, etc., handled inline.
+- Interactive params – dynamic placeholders {id}, {category}, etc., handled inline.
 
-📊 History & export – logs and exports built-in.
+- History & export – logs and exports built-in.
 
-🖥️ CLI ready – perfect for headless or CI pipelines.
+- CLI ready – perfect for headless or CI pipelines.
 
 If your team is on Telegram, you get instant API checks with minimal setup. Postman can’t ping your API while you’re in a meeting. 😉
 
@@ -216,5 +216,5 @@ Useful for CI or quick terminal checks without Telegram.
 
 ## 📜 License
 
-MIT License © 2025 Gabriele A. Tambellini  
+MIT License © 2026 Gabriele A. Tambellini  
 See the [LICENSE](LICENSE) file for details.
